@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCEA Kalalu Youth - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .bg-custom-blue {
+            background-color: #1e3a8a;
+        }
+        .bg-custom-red {
+            background-color: #dc2626;
+        }
+        .text-custom-blue {
+            color: #1e3a8a;
+        }
+        .text-custom-red {
+            color: #dc2626;
+        }
+        .border-custom-blue {
+            border-color: #1e3a8a;
+        }
+        .border-custom-red {
+            border-color: #dc2626;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="bg-custom-blue text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="download.jpeg" alt="PCEA Kalalu Logo" class="h-10 w-10 rounded-full">
+                <span class="text-xl font-bold">PCEA Kalalu Youth</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-gray-300 font-medium">Home</a>
+                <a href="images.html" class="hover:text-gray-300 font-medium">Images</a>
+                <a href="contacts.html" class="hover:text-gray-300 font-medium">Contacts</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-custom-blue px-4 py-2" id="mobile-menu">
+            <a href="index.html" class="block py-2 hover:text-gray-300">Home</a>
+            <a href="images.html" class="block py-2 hover:text-gray-300">Images</a>
+            <a href="contacts.html" class="block py-2 hover:text-gray-300">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <header class="bg-custom-red text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Our Gallery</h1>
+            <p class="text-xl md:text-2xl" data-aos="fade-up">Capturing Moments of Faith, Fellowship & Service</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-custom-blue mb-4" data-aos="fade-up">Youth Activities & Events</h2>
+                <div class="flex justify-center space-x-4">
+                    <button class="" data-filter="all">All</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="retreat">Retreats</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="service">Sunday Service</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="praise">Praise Team</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="sports">Sports</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="rally">Youth Rallies</button>
+                    <button class="filter-btn px-4 py-2 rounded-full border border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white" data-filter="trees">Planting Trees</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 gallery-container">
+                <!-- Retreat Images -->
+                <div class="gallery-item retreat" data-aos="zoom-in">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="" class="image-popup">
+                            <img src="IMG-20250902-WA0121.jpg" alt="Youth Retreat" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Annual Youth Retreat</h3>
+                            <p class="text-gray-600">2023 Spiritual Retreat</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sunday Service Images -->
+                <div class="gallery-item service" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0122.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0122.jpg" alt="Sunday Service" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Sunday Service</h3>
+                            <p class="text-gray-600">Youth leading worship</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Praise Team Images -->
+                <div class="gallery-item praise" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0124.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0124.jpg" alt="Praise Team" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Youth Praise Team</h3>
+                            <p class="text-gray-600">Leading worship</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sports Images -->
+                <div class="gallery-item sports" data-aos="zoom-in">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0133.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0133.jpg" alt="Sports Day" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Inter-Church Sports</h3>
+                            <p class="text-gray-600">Building fellowship through sports</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Youth Rallies Images -->
+                <div class="gallery-item rally" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0135.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0135.jpg" alt="Youth Rally" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Youth Rally</h3>
+                            <p class="text-gray-600">Annual youth gathering</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Planting Trees Images -->
+                <div class="gallery-item trees" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0136.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0136.jpg" alt="Planting Trees" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Community Service</h3>
+                            <p class="text-gray-600">Planting trees in our community</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Images -->
+                <div class="gallery-item retreat" data-aos="zoom-in">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0137.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0137.jpg" alt="Retreat Worship" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Retreat Worship</h3>
+                            <p class="text-gray-600">Night worship session</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item service" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0147.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0147.jpg" alt="Bible Study" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Bible Study</h3>
+                            <p class="text-gray-600">Youth engaging with Scripture</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item praise" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <a href="IMG-20250902-WA0148.jpg" class="image-popup">
+                            <img src="IMG-20250902-WA0148.jpg" alt="Choir Practice" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                        </a>
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold text-custom-blue">Choir Practice</h3>
+                            <p class="text-gray-600">Preparing for Sunday service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">PCEA Kalalu Youth</h3>
+                    <p class="text-gray-400">Rooted in Christ, Growing in Purpose</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-300"><i data-feather="facebook"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i data-feather="twitter"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i data-feather="instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 PCEA Kalalu Youth Department. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Gallery filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(btn => btn.classList.remove('active', 'bg-custom-blue', 'text-white'));
+                filterBtns.forEach(btn => btn.classList.add('border', 'border-custom-blue', 'text-custom-blue'));
+                
+                // Add active class to clicked button
+                this.classList.add('active', 'bg-custom-blue', 'text-white');
+                this.classList.remove('border', 'border-custom-blue', 'text-custom-blue');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        feather.replace();
+    </script>
+</body>
+</html>
